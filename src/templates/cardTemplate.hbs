@@ -1,0 +1,24 @@
+{{#each hits}}
+<div class="photo-card">
+  <img class="photo-card__img" src="{{webformatURL}}" alt="{{type}}" />
+
+  <div class="stats">
+    <p class="stats-item">
+      <span class="material-icons">thumb_up</span>
+      {{likes}}
+    </p>
+    <p class="stats-item">
+      <span class="material-icons">visibility</span>
+      {{views}}
+    </p>
+    <p class="stats-item">
+      <span class="material-icons">comment</span>
+      {{comments}}
+    </p>
+    <p class="stats-item">
+      <span class="material-icons">cloud_download</span>
+      {{downloads}}
+    </p>
+  </div>
+</div>
+{{/each}}
